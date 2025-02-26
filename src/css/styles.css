@@ -1,11 +1,11 @@
 :root {
   --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
-  --text-primary: #e4e4e4;
-  --text-secondary: #a0a0a0;
-  --accent-primary: #bb86fc;
-  --accent-secondary: #03dac6;
-  --border-color: #333;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #909090;
+  --accent-primary: #c0c0c0;
+  --accent-secondary: #808080;
+  --border-color: #2a2a2a;
 }
 
 body {
@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: var(--accent-primary);
+  letter-spacing: -0.02em;
 }
 
 h1 {
@@ -89,9 +90,23 @@ code {
 }
 
 blockquote {
-  border-left: 4px solid var(--accent-primary);
+  border-left: 4px solid var(--border-color);
   padding-left: 1rem;
   margin-left: 0;
   color: var(--text-secondary);
   font-style: italic;
+}
+
+.post-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
 }
