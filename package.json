@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"description": "A personal blog built with Eleventy",
 	"scripts": {
-		"build": "eleventy",
-		"start": "eleventy --serve",
+		"build": "npx @11ty/eleventy",
+		"start": "npx @11ty/eleventy --serve",
 		"debug": "DEBUG=* eleventy"
 	},
 	"devDependencies": {
