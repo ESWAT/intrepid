@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} - {% endif %}Intrepid Notes</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <meta name="color-scheme" content="dark">
 </head>
 <body>
@@ -14,5 +17,8 @@
   <main>
     {{ content | safe }}
   </main>
+  <footer>
+    <p>&copy; {% year %} Intrepid Notes</p>
+  </footer>
 </body>
 </html>
