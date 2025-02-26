@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} - {% endif %}Intrepid Notes</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <meta name="color-scheme" content="dark">
+</head>
+<body>
+  <header>
+    <h1>{% if title %}{{ title }}{% else %}Intrepid Notes{% endif %}</h1>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <p>&copy; {% year %} Intrepid Notes</p>
+  </footer>
+</body>
+</html>
