@@ -23,6 +23,11 @@ module.exports = function(eleventyConfig) {
   // Add shortcode for current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  // Get the repository name for GitHub Pages
+  const pathPrefix = process.env.GITHUB_REPOSITORY 
+    ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` 
+    : '/';
+
   return {
     // Default template engine for markdown files
     markdownTemplateEngine: "njk",
@@ -32,6 +37,9 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "_site",
       includes: "_includes"
-    }
+    },
+    
+    // Add pathPrefix for GitHub Pages
+    pathPrefix: process.env.GITHUB_ACTIONS ? pathPrefix : '/'
   };
 };
