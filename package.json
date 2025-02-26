@@ -1,4 +1,12 @@
 {
+	"name": "intrepid-notes",
+	"version": "1.0.0",
+	"description": "A personal blog built with Eleventy",
+	"scripts": {
+		"build": "eleventy",
+		"start": "eleventy --serve",
+		"debug": "DEBUG=* eleventy"
+	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.0.0"
 	}
