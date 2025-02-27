@@ -1,0 +1,112 @@
+:root {
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #909090;
+  --accent-primary: #c0c0c0;
+  --accent-secondary: #808080;
+  --border-color: #2a2a2a;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.03em;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent-secondary);
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+time {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+main {
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+blockquote {
+  border-left: 4px solid var(--border-color);
+  padding-left: 1rem;
+  margin-left: 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.post-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
